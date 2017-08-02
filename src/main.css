@@ -4,3 +4,24 @@
   margin: 100px;
   border-right:50%;
 }
+
+.upload-label{
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-size:260px;
+  background-position: center center
+}
+
+input{
+  width: 0;
+  height: 0;
+}
+/*去除input带的一些字体，所有把宽高为0*/
+
+input:focus{
+  border: 0;
+  outline: 0
+}

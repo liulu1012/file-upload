@@ -35,8 +35,9 @@ class App extends React.Component{
   render(){
     return(
       <div className='App'>
-        <img src={this.state.imgURL} alt='url'/>
-        <input type='file' onChange={this.handleChange} className='file-upload-input' />
+        <label style={{'backgroundImage':`url(${this.state.imgURL})`}} className='upload-label'>
+          <input type='file' onChange={this.handleChange} className='file-upload-input' />
+        </label>
       </div>
     )
   }
