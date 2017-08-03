@@ -10,7 +10,7 @@ class App extends React.Component{
     const file = event.target.files[0]
     const reader = new FileReader()
     reader.onload = (event) => {
-      console.log(event)
+      // console.log(event)
       let data = {
         file:event.target.result
       }
